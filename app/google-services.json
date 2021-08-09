@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "516034139785",
+    "project_id": "grantzapp",
+    "storage_bucket": "grantzapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516034139785:android:59e882ca935245956d1858",
+        "android_client_info": {
+          "package_name": "com.example.grantzapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516034139785-n1ncuae9e86oer0gmla6o1qn3urhdh43.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grantzapp",
+            "certificate_hash": "ec7f19f98077fdc8b4349e0c647623d81ca83389"
+          }
+        },
+        {
+          "client_id": "516034139785-83enfbu0b9n2hf1lk8aqg1p7t4rki9kh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf0LbN7NrZ7234ja3NR5Ir7vngn8qDaII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516034139785-83enfbu0b9n2hf1lk8aqg1p7t4rki9kh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

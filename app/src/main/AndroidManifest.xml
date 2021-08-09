@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.grantzapp">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GrantzApp">
+        <activity android:name=".activity.StudentsDonorsActivity"></activity>
+        <activity android:name=".activity.DonorStudentsActivity" />
+        <activity android:name=".activity.ContributionActivity" />
+        <activity android:name=".activity.MeetingsDetailsActivity" />
+        <activity android:name=".activity.DonorsMeetDetailsActivity" />
+        <activity android:name=".activity.DonorMeetingActivity" />
+        <activity android:name=".activity.ApproveDonorsActivity" />
+        <activity android:name=".activity.DonorsActivity" />
+        <activity android:name=".activity.TotalGrantActivity" />
+        <activity android:name=".activity.DonorsDetailsActivity" />
+        <activity android:name=".activity.StudentsActivity" />
+        <activity android:name=".activity.AdminloginActivity" />
+        <activity android:name=".activity.StudentRegisterActivity" />
+        <activity android:name=".activity.CorrectionActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.AdminActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.GrantsAwardActivity" />
+        <activity android:name=".activity.FileReceiptActivity" />
+        <activity android:name=".activity.StudentsDetailsActivity" />
+        <activity android:name=".activity.StudentLoginActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.MainActivity" />
+    </application>
+
+</manifest>
