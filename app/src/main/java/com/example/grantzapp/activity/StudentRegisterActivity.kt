@@ -128,10 +128,17 @@ class StudentRegisterActivity : AppCompatActivity() {
         userMap["school"] = school
         userMap["AdmNo"] = AdmNo.toLowerCase()
         userMap["email"] = email
-        userMap["amount"] = ""
+        userMap["amount"] = "0"
         userMap["Dates"] = ""
         userMap["Purpose"] = ""
         userMap["image"] = ""
+        userMap["image2"] = ""
+        userMap["amount2"] = "0"
+        userMap["admno2"] = ""
+        userMap["dates2"] = ""
+        userMap["Purpose2"] = ""
+        userMap["Desc"] = ""
+        userMap["balance"] = "0"
 
         userRef.child(CurrentUserId).setValue(userMap)
             .addOnCompleteListener { task ->

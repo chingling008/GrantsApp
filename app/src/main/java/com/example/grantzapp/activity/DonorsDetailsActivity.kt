@@ -22,13 +22,13 @@ class DonorsDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_donors_details)
-
         recyclerView = findViewById(R.id.recyclerView4)
 
         donorsList = ArrayList()
         donorsAdapter = DonorsAdapter(this,donorsList)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
+
         recyclerView.adapter = donorsAdapter
 
 

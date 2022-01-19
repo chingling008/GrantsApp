@@ -15,10 +15,7 @@ import kotlinx.android.synthetic.main.content_main.*
 
 class AdminActivity : AppCompatActivity() {
 
-    private lateinit var firebaseUser: FirebaseUser
     private lateinit var database: DatabaseReference
-    private lateinit var studentsNo: TextView
-
     private lateinit var binding:ActivityAdminBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,10 +41,6 @@ class AdminActivity : AppCompatActivity() {
             true
         }
 
-
-
-
-        firebaseUser = FirebaseAuth.getInstance().currentUser!!
         database = FirebaseDatabase.getInstance().reference
 
         binding.btnStDetails.setOnClickListener {
@@ -67,8 +60,12 @@ class AdminActivity : AppCompatActivity() {
             val intent = Intent(this, DonorsDetailsActivity::class.java)
             startActivity(intent)
         }
+        binding.btnbal.setOnClickListener {
+            val intent = Intent(this,AdminBalActivity::class.java)
+            startActivity(intent)
+        }
 
-
+ 
     }
 
 

@@ -4,28 +4,21 @@ import android.app.DatePickerDialog
 import android.app.ProgressDialog
 import android.content.DialogInterface
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.StrictMode
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.grantzapp.R
 import com.example.grantzapp.databinding.ActivityGrantsAwardBinding
 import com.example.grantzapp.models.Amounts
-import com.google.android.gms.tasks.Continuation
-import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.google.firebase.storage.StorageTask
-import com.google.firebase.storage.UploadTask
 import kotlinx.android.synthetic.main.activity_grants_award.*
 import kotlinx.android.synthetic.main.activity_profile.*
 import kotlinx.android.synthetic.main.student_details.*
@@ -121,7 +114,6 @@ class GrantsAwardActivity : AppCompatActivity() {
             database.child("StudentsTable").child(id).child("Dates").setValue(Dates)
             database.child("StudentsTable").child(id).child("Purpose").setValue(Purpose)
         }
-
         val time = txtAmount.getText().toString()
         val builder = AlertDialog.Builder(this@GrantsAwardActivity)
             .setTitle("Award Grants")

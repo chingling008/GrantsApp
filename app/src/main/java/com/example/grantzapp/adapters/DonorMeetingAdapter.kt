@@ -50,22 +50,22 @@ class DonorMeetingAdapter(
 
             val image = value.getimage3()
 
-            var intent = Intent(c, ApproveDonorsActivity::class.java)
-            intent.putExtra("firstName", fname)
-            intent.putExtra("lastName", lname)
-            intent.putExtra("email", email)
-            intent.putExtra("Image", image)
-            intent.putExtra("dates", dates)
-            intent.putExtra("donorname", donorname)
-            intent.putExtra("donoremail", donoremail)
-            intent.putExtra("studentemail", studentemail)
-//            intent.putExtra("studentId", student)
-            intent.putExtra("time", time)
-            intent.putExtra("uid", key)
-
-            Toast.makeText(c, email, Toast.LENGTH_SHORT).show()
-
-            c.startActivity(intent)
+//            var intent = Intent(c, ApproveDonorsActivity::class.java)
+//            intent.putExtra("firstName", fname)
+//            intent.putExtra("lastName", lname)
+//            intent.putExtra("email", email)
+//            intent.putExtra("Image", image)
+//            intent.putExtra("dates", dates)
+//            intent.putExtra("donorname", donorname)
+//            intent.putExtra("donoremail", donoremail)
+//            intent.putExtra("studentemail", studentemail)
+////            intent.putExtra("studentId", student)
+//            intent.putExtra("time", time)
+//            intent.putExtra("uid", key)
+//
+//            Toast.makeText(c, email, Toast.LENGTH_SHORT).show()
+//
+//            c.startActivity(intent)
 
         }
     }

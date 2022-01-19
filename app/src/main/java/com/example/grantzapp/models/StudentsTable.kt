@@ -13,6 +13,15 @@ data class StudentsTable (
     var amount:String? = null,
     var Dates:String? = null,
     var Purpose:String? = null,
+    var Desc: String? = null,
+
+    var amount2: String? = null,
+    var dates2: String? = null,
+    var purpose2: String? = null,
+    var admno2: String? =null,
+    var image2:String? = null,
+    var balance:String? = null,
+
 )
 
 

@@ -40,11 +40,21 @@ class DonorsActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnAppointment.setOnClickListener {
-            val intent = Intent(this,  MeetingsDetailsActivity ::class.java)
+            val intent = Intent(this,  MeetingsDetailsActivity::class.java)
             startActivity(intent)
         }
         binding.btnReport.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+
+        }
+//        binding.btnReceipt.setOnClickListener {
+//            val intent = Intent(this, ReceiptActivity::class.java)
+//            startActivity(intent)
+//
+//        }
+        binding.btnbal.setOnClickListener {
+            val intent = Intent(this, NewActivity::class.java)
             startActivity(intent)
 
         }

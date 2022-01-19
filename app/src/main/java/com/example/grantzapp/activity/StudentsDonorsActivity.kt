@@ -32,7 +32,7 @@ class StudentsDonorsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_students_donors)
 
         recyclerView2 = findViewById(R.id.recyclerView10)
-        editSearchText = findViewById(R.id.Search)
+        editSearchText = findViewById(R.id.txtSearch)
         studentDonorList = ArrayList()
         studentsDonorAdapter = StudentsDonorsAdapter(this, studentDonorList,true)
         recyclerView2.layoutManager = LinearLayoutManager(this)
@@ -47,7 +47,7 @@ class StudentsDonorsActivity : AppCompatActivity() {
 
             }
             override fun onTextChanged(cs: CharSequence?, start: Int, before: Int, count: Int) {
-                if (Search.text.toString() == ""){
+                if (Search.editText.toString() == ""){
 
                 }else{
                     recyclerView2?.visibility = View.VISIBLE

@@ -33,17 +33,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="TotalAmountContributed :"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
 
                     <TextView
                         android:id="@+id/firstName"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/_10sdp"
                         android:gravity="center"
-                        android:text="Total Amount Contributed"
+                        android:layout_weight="1"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_16sdp"
+                        android:textSize="16dp"
                         android:textStyle="bold" />
 
 

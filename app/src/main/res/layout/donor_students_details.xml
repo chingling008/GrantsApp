@@ -27,90 +27,166 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    android:layout_marginEnd="5dp"
+                    android:text="FirstName :"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
 
                     <TextView
                         android:id="@+id/firstName"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/_10sdp"
-                        android:gravity="center"
+                        android:layout_weight="1"
                         android:text="@{isMM.firstName}"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="LastName :"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
 
                     <TextView
                         android:id="@+id/lastName"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/_10sdp"
-                        android:gravity="center"
+                        android:layout_weight="1"
                         android:text="@{isMM.lastName}"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
+             </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Email :"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
                     <TextView
                         android:id="@+id/dates"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/_10sdp"
-                        android:gravity="center"
+                        android:layout_weight="1"
                         android:text="@{isMM.email}"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
+             </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Purpose :"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
                     <TextView
                         android:id="@+id/time"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/_10sdp"
-                        android:gravity="center"
+                        android:layout_weight="1"
                         android:text="@{isMM.purpose}"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
+             </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Amount :"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
                     <TextView
                         android:id="@+id/email1"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/_10sdp"
-                        android:gravity="center"
+                        android:layout_weight="1"
                         android:text="@{isMM.amount}"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
+             </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="AdmNo :"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
 
                     <TextView
                         android:id="@+id/AdmNo1"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/_10sdp"
-                        android:gravity="center"
+                        android:layout_weight="1"
                         android:text="@{isMM.admNo}"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
+             </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="SchoolName :"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
                     <TextView
                         android:id="@+id/school2"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/_10sdp"
-                        android:gravity="center"
+                        android:layout_weight="1"
                         android:text="@{isMM.school}"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
-
-
+             </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
     </androidx.cardview.widget.CardView>
 </layout>

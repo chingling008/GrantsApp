@@ -38,7 +38,7 @@ class StudentsDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_students_details)
         recyclerView1 = findViewById(R.id.recyclerView)
-        editSearchText = findViewById(R.id.Search)
+        editSearchText = findViewById(R.id.txtSearch)
         textView = findViewById(R.id.textView7)
         studentsList = ArrayList()
         studentsAdapter = StudentsAdapter(this, studentsList, true)
@@ -54,7 +54,7 @@ class StudentsDetailsActivity : AppCompatActivity() {
 
             }
             override fun onTextChanged(cs: CharSequence?, start: Int, before: Int, count: Int) {
-                if (Search.text.toString() == ""){
+                if (Search.editText.toString() == ""){
 
                 }else{
                     recyclerView1?.visibility = View.VISIBLE

@@ -19,7 +19,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GrantzApp">
-        <activity android:name=".activity.StudentsDonorsActivity"></activity>
+        <activity android:name=".activity.AdminBalActivity"></activity>
+        <activity android:name=".activity.ReceiptActivity" />
+        <activity android:name=".activity.NewActivity"/>
+
+        <activity android:name=".activity.StudentsDonorsActivity" />
         <activity android:name=".activity.DonorStudentsActivity" />
         <activity android:name=".activity.ContributionActivity" />
         <activity android:name=".activity.MeetingsDetailsActivity" />
@@ -43,7 +47,6 @@
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
